@@ -623,11 +623,6 @@ ul.follow-social li p {
     .skills-text {
         grid-column: span 12;
     }
-
-    #container {
-        margin-left: 8.333333%;
-        margin-right: 8.333333%;
-    }
 }
 
 .skills-container img {
@@ -897,7 +892,7 @@ ul.follow-social li p {
 @media only screen and (max-width:1300px) {
     #container {
         margin-left: 8.333333%;
-        margin-right: 3.333333%;
+        margin-right: 8.333333%;
         /* background-color: yellow; */
     }
 }
@@ -909,11 +904,6 @@ ul.follow-social li p {
 
     .client-text {
         grid-column: span 12;
-    }
-
-    #container {
-        margin-left: 8.333333%;
-        margin-right: 8.333333%;
     }
 }
 
@@ -1278,8 +1268,19 @@ footer .footer-text p a{
     footer .footer-text p{
         font-size: 1rem;
     }
+    .hero-text p{
+        font-size: 1rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    ul.follow-social{
+        position: absolute;
+        right: 10%;
+        bottom: 7%;
+    }
+}
 @media only screen and (max-width:280px) {
   
 }
-}
+
 /* MEDIA QUERY */
