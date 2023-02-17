@@ -34,10 +34,14 @@
 :root {
     --background-color: #fff;
     --text-color: #000;
+    --color-color: purple;
+    --box-shadow:3px 3px 3px 3px ghostwhite;
   }
   [data-theme="dark"] {
     --background-color: black;
     --text-color: #fff;
+    /* --color-color:black; */
+    --box-shadow: 1px 1px 1px 1px  ghostwhite;
   }
   .containers .button{
     background-color: purple;
@@ -82,7 +86,7 @@ header .containers {
     background-color: var(--background-color);
     max-width: 100%;
     width: 100%;
-    box-shadow: 3px 3px 3px 3px ghostwhite;
+    box-shadow: var(--box-shadow);
     position: fixed;
     top: 0;
     z-index: 1;
@@ -122,7 +126,7 @@ header .containers {
     position: relative;
 }
 .link li a.active{
-    color: purple;
+    color: purple
 }
 .link li a::before{
     content: '';
@@ -1220,6 +1224,7 @@ footer .footer-text p a{
         margin-top: 10px;
         margin-bottom: 10px;
         text-align: right;
+        color: var(--text-color);
     }
 
     #nav .link {
@@ -1245,4 +1250,36 @@ footer .footer-text p a{
     }
 }
 
+@media only screen and (max-width:414px) {
+    .hero-text h1{
+        font-size: 2rem;
+    }
+    .logo h1{
+        font-size: 1.5rem;
+    }
+    .skills-container img{
+        width: 80%;
+    }
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 30px;
+    }
+    .award-img .icon-1 img{
+        width: 70%;
+    }
+    .client-text h1{
+        /* font-size: 2rem; */
+        width: 100%;
+    }
+    .contact-text .contact-information p{
+        font-size: 1rem;
+    }
+    footer .footer-text p{
+        font-size: 1rem;
+    }
+@media only screen and (max-width:280px) {
+  
+}
+}
 /* MEDIA QUERY */
