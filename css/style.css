@@ -306,7 +306,7 @@ header .containers {
 ul.follow-social {
     position: absolute;
     right: 10%;
-    top: 75%;
+    bottom: 0;
 }
 
 ul.follow-social li {
@@ -829,7 +829,7 @@ ul.follow-social li p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     font-size: 2.5rem;
-    width: 67%;
+    width: 100%;
 }
 
 .award-text h1 span {
@@ -1234,10 +1234,17 @@ footer .footer-text p a{
         display: block;
     }
 }
-
+@media only screen and (max-width:540px) {
+    .follow-social li p{
+        display: none;
+    }
+}
 @media only screen and (max-width:414px) {
     .hero-text h1{
         font-size: 1.5rem;
+    }
+    .heading h1,.skills-text h1,.award-text h1,.client-text h1{
+        font-size: 2rem;
     }
     .logo h1{
         font-size: 1.5rem;
@@ -1270,10 +1277,6 @@ footer .footer-text p a{
     }
     .hero-text p span{
         font-size: 0.8875rem;
-    }
-    ul.follow-social{
-        position: absolute;
-        right: 10%;
     }
 }
 @media only screen and (max-width:280px) {
