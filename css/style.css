@@ -306,7 +306,7 @@ header .containers {
 ul.follow-social {
     position: absolute;
     right: 10%;
-    bottom: 0%;
+    top: 75%;
 }
 
 ul.follow-social li {
@@ -386,7 +386,7 @@ ul.follow-social li p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin-top: 3%;
-    gap: 50px;
+    gap: 30px;
 }
 
 .service-1,
@@ -1242,7 +1242,7 @@ footer .footer-text p a{
 
 @media only screen and (max-width:414px) {
     .hero-text h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .logo h1{
         font-size: 1.5rem;
@@ -1269,14 +1269,21 @@ footer .footer-text p a{
         font-size: 1rem;
     }
     .hero-text p{
-        font-size: 1rem;
-        width: 80%;
+        font-size: 0.8875rem;
+        /* width: 80%; */
         margin: 0 auto;
+    }
+    .hero-text p span{
+        font-size: 0.8875rem;
     }
     ul.follow-social{
         position: absolute;
         right: 10%;
-        bottom: 7%;
+    }
+    #container {
+        margin-left: 8.333333%;
+        margin-right: 8.333333%;
+        /* background-color: yellow; */
     }
 }
 @media only screen and (max-width:280px) {
