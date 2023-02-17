@@ -1191,7 +1191,13 @@ footer .footer-text p a{
     text-decoration: none;
 }
 /* FOOTER SECTION */
-
+.top i{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    color: purple;
+    font-size: 5rem;
+}
 /* MEDIA QUERY */
 @media only screen and (max-width:991px) {
     #nav ul {
